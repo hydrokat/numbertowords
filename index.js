@@ -47,9 +47,9 @@ function toSmallWords(number) {
     if(number.length == 3) {
         smallWords += ones[number[0]] + " " + big[4] + " "
         smallWords += number[1] != 0 ? 
-                    (number[1] == 1 ? tens[number[2]] + " " : tensBig[number[1]] + " ")
+                    (number[1] == 1 ? tens[number[2]] : tensBig[number[1]] + " ")
                     : " "
-        smallWords += number[1] == 1 ? " " : ones[number[2]]
+        smallWords += number[1] == 1 ? "" : ones[number[2]]
     }
 
     if(number.length == 2) {
